@@ -1,3 +1,16 @@
+<?php
+if(isset($_POST["login"])){
+$username = $_POST["user"];
+$password = $_POST["pass"];
+if($username=="admin" && $password== "admin"){
+echo "<script type='text/javascript'>alert('Login Success')</script>";
+}else{
+echo "<script type='text/javascript'>alert('Login Error')</script>";
+}
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,7 +39,7 @@
                           </form>
                     </div>
 
-                    <div class="buttonlogin">
+                    <div class="masuk">
                         <a href="dashboard.php">Login</a>
                     </div>
                     

@@ -74,7 +74,7 @@ form.Name input[type=text] {
     color: #caa0a0;
 }
 
-.buttonlogin {
+.masuk {
     position: relative;
     display: flex;
     justify-content: center;
@@ -87,7 +87,7 @@ form.Name input[type=text] {
     top: 260px;
 }
 
-.buttonlogin a {
+.masuk a {
     text-decoration: none;
     color: #786d6d;
     display: flex;

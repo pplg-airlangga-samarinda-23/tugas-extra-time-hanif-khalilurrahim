@@ -1,3 +1,10 @@
+<?php
+
+require_once('config/dbtables.php');
+$query = "select * from tables";
+$result = mysqli_query($con,$query);
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,42 +34,25 @@
               <th>No</th>
               <th>Barang</th>
               <th>Stock</th>
+              <th>Harga</th>
             </tr>
             <tr>
-              <td>1</td>
-              <td></td>
-              <td></td>
+            <?php
+            
+                while($row = mysqli_fetch_assoc($result))
+                {
+            ?>  
+                <td><?php echo $row['No'] ?></td>
+                <td><?php echo $row['Barang'] ?></td>
+                <td><?php echo $row['Stock'] ?></td>
+                <td><?php echo $row['harga'] ?></td>
+            
             </tr>
-            <tr>
-              <td>2</td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>3</td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>4</td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>5</td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>6</td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-                <td>7</td>
-                <td></td>
-                <td></td>
-              </tr>
+            <?php
+                }
+                
+            ?>
+
           </table>
     </div>
 
