@@ -25,9 +25,13 @@
                             <input type="text" placeholder="PassWord..." name="search">
                           </form>
                     </div>
+
+                    <div class="buttonlogin">
+                        <a href="dashboard.php">Login</a>
+                    </div>
                     
                     <div class="forgot">
-                        <a href="dashboard.html">Forgot Password</a>
+                        <a>Forgot Password</a>
                     </div>
                 </div>
         </div>

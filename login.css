@@ -74,6 +74,26 @@ form.Name input[type=text] {
     color: #caa0a0;
 }
 
+.buttonlogin {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 10%;
+    background-color: #f1c9c9;
+    border: #867777 solid 1px;
+    border-radius: 10px;
+    padding: 10px;
+    left: 43%;
+    top: 260px;
+}
+
+.buttonlogin a {
+    text-decoration: none;
+    color: #786d6d;
+    display: flex;
+    justify-content: center;
+}
+
 .head {
     position: absolute;
     display: flex;
@@ -179,3 +199,4 @@ table {
     position: relative;
     right: 30px;
 }
+

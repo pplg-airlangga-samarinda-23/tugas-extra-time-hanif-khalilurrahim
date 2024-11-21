@@ -18,7 +18,7 @@
         <a href="">Master Barang</a><br>
         <a href="">Receiving</a><br>
         <a href="">issuing</a><br>
-        <a href="login.html">Back ⬅️</a><br>
+        <a href="login.php">Back ⬅️</a><br>
     </div>
 
     <div class="tabel">
