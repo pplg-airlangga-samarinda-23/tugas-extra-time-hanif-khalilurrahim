@@ -5,12 +5,19 @@ $query = "select * from tables";
 $result = mysqli_query($con,$query);
 
 ?>
+
+<?php 
+session_start();
+
+if (isset($_SESSION['id']) && isset($_SESSION['nama'])) {
+
+ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" type="text/css" href="login.css">
     <title>DashBoard</title>
 </head>
 <body>
@@ -60,5 +67,13 @@ $result = mysqli_query($con,$query);
         <a class="kopi">Copyright By karuga</a>
         <a class="vr">Version 1.0 Beta alpha Sigma</a>
     </di>
+
 </body>
 </html>
+
+<?php 
+}else{
+    header("Location: login.php");
+    exit();
+}
+?>
